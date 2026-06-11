@@ -23,6 +23,10 @@
         <button type="submit">Recommend</button>
     </form>
 
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
     {% if recommendations %}
         <h2>✨ Recommended Movies</h2>
 
